@@ -12,6 +12,9 @@ public class CameraRenderer
 		this.camera = camera;
 
 		DrawVisibleGeometry();
+		
+		Submit();
+
 	}
 
 	void DrawVisibleGeometry()
@@ -19,4 +22,8 @@ public class CameraRenderer
 		context.DrawSkybox(camera);
 	}
 
+	void Submit()
+	{
+		context.Submit();
+	}
 }
