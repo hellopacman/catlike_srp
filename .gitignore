@@ -1,7 +1,7 @@
-/.vs
-/Library
-/Logs
-/obj
-/Temp
+.vs
+Library
+Logs
+obj
+Temp
 *.sln
 *.csproj
