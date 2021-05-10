@@ -550,6 +550,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 0, b: 0.6396222, a: 1}
+  cutoff: 0.42
 --- !u!135 &104110246
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -659,6 +660,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 0.59228134, g: 0, b: 1, a: 1}
+  cutoff: 0.39
 --- !u!135 &117127479
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -768,6 +770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 0.73635197, g: 0, b: 1, a: 1}
+  cutoff: 0.37
 --- !u!135 &118636460
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1352,6 +1355,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0.08320022, b: 1, a: 1}
+  cutoff: 0.5
 --- !u!135 &319258322
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3307,6 +3311,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 0.89887714, g: 0, b: 1, a: 1}
+  cutoff: 0.36
 --- !u!135 &651814683
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6959,6 +6964,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 0.31428528, g: 0, b: 1, a: 1}
+  cutoff: 0.58
 --- !u!135 &1534832427
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7163,6 +7169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 0, b: 0.7890277, a: 1}
+  cutoff: 0.94
 --- !u!135 &1554584734
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7606,6 +7613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 0.49517727, g: 0, b: 1, a: 1}
+  cutoff: 0.63
 --- !u!135 &1636347945
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8760,6 +8768,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 0, b: 0.96968555, a: 1}
+  cutoff: 0.24
 --- !u!135 &1850915461
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9154,6 +9163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 0.13039637, g: 0, b: 1, a: 1}
+  cutoff: 0.93
 --- !u!135 &1928657773
 SphereCollider:
   m_ObjectHideFlags: 0
