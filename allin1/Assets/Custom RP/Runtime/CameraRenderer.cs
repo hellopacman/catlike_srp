@@ -10,10 +10,15 @@ public partial class CameraRenderer
     // 是不是
     //     当没有在DrawingSettings指定任何shaderTag时，任何shader都没用的吧？
     //     当指定了SRPDefaultUnlit后， SRPDefaultUnlit和没有lightMode tag的shader就能用了?
-    static ShaderTagId unlitShaderTagId = new ShaderTagId("SRPDefaultUnlit");
+    private static ShaderTagId
+        unlitShaderTagId = new ShaderTagId("SRPDefaultUnlit"),
+        litShaderTagId = new ShaderTagId("CustomLit");
+        
     
     private const string bufferName = "MyCameraRenderer";
 
+    private Lighting lighting = new Lighting();
+    
     private CommandBuffer buffer = new CommandBuffer
     {
         name = bufferName
@@ -38,6 +43,7 @@ public partial class CameraRenderer
             return;
         
         Setup();
+        lighting.Setup(context, cullingResults);
         DrawVisibleGeometry(useDynamicBatching, useGPUInstancing);
         DrawUnsupportedShaders();
         DrawGizmos();
@@ -89,6 +95,8 @@ public partial class CameraRenderer
             enableDynamicBatching = useDynamicBatching,
             enableInstancing = useGPUInstancing
         };
+        drawingSettings.SetShaderPassName(1, litShaderTagId);
+        
         var filteringSettings = new FilteringSettings(RenderQueueRange.opaque);
         
         context.DrawRenderers(
